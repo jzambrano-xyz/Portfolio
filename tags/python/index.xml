@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Julio Zambrano</title>
+    <link>https://jzambrano-xyz.github.io/Portfolio/tags/python/</link>
+    <description>Recent content in Python on Julio Zambrano</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Julio Zambrano {year}</copyright>
+    <lastBuildDate>Mon, 24 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://jzambrano-xyz.github.io/Portfolio/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Science Web App - Palmer Penguins prediction</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/project/palmerpenguins/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/project/palmerpenguins/</guid>
+      <description>&lt;p&gt;The purpose of this ML Web App is to make a dynamic prediction of the species of a penguin based on its characteristics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Island&lt;/li&gt;
+&lt;li&gt;Bill length&lt;/li&gt;
+&lt;li&gt;Bill depth&lt;/li&gt;
+&lt;li&gt;Flipper length&lt;/li&gt;
+&lt;li&gt;Body mass&lt;/li&gt;
+&lt;li&gt;Sex&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In order to improve its performance, this project has two python files: one to create the model that will make the prediction of the species and another to execute the web app and get the user’s input to make the prediction with a call to the model.&lt;/p&gt;
+&lt;p&gt;The model can be updated to predict the species, sex or island of the penguin, just requiring to change the values of the corresponding column in the dataset that has the info to be predicted and its target information within the code.&lt;/p&gt;
+&lt;p&gt;In order to execute this project, it is necessary to have &lt;code&gt;pandas&lt;/code&gt;, &lt;code&gt;sklearn&lt;/code&gt;, &lt;code&gt;streamlit&lt;/code&gt;, &lt;code&gt;pickle&lt;/code&gt; and &lt;code&gt;numpy&lt;/code&gt; installed with &lt;strong&gt;python&lt;/strong&gt;, all of these to be run into an &lt;strong&gt;Anaconda&lt;/strong&gt; environment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Procedure:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Write the code for the classification model in Atom and save it as a .py file (&lt;code&gt;model_building_penguins.py&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Launch Anaconda prompt to have python execute the .py file and return a pickle file with the ready-to-use model in the same folder (&lt;code&gt;penguins_clf.pkl&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Write the code for the web app in Atom and save it as a .py file (&lt;code&gt;model_building_penguins.py&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Execute the web app with Streamlit using Anaconda&lt;/li&gt;
+&lt;li&gt;Upload a .csv file with the the characteristics of a penguin, or change the values of its characteristics in the left panel to predict in real time its species&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/PenguinsModelBuilding.jpg&#34; alt=&#34;alt text&#34; title=&#34;Code for the model&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/PenguinsPickle.jpg&#34; alt=&#34;alt text&#34; title=&#34;Creation of the pickle model&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/WebAppPenguins.jpg&#34; alt=&#34;alt text&#34; title=&#34;Code for the Web app&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/StreamlitPenguins.jpg&#34; alt=&#34;alt text&#34; title=&#34;Execution of the Web app using Streamlit&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/PalmerPenguins.gif&#34; alt=&#34;alt text&#34; title=&#34;Web app running on Streamlit&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Science Web App - Iris flower prediction</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/project/iris-flower-ml/</link>
+      <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/project/iris-flower-ml/</guid>
+      <description>&lt;p&gt;The purpose of this ML Web App is to make a dynamic prediction of the type of a flower based on its characteristics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sepal length&lt;/li&gt;
+&lt;li&gt;Sepal width&lt;/li&gt;
+&lt;li&gt;Petal length&lt;/li&gt;
+&lt;li&gt;Petal width&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This project requires to have &lt;code&gt;sklearn&lt;/code&gt; and &lt;code&gt;pandas&lt;/code&gt; installed with Python, in order to import the dataset that contains the information of the flowers and to execute a random forest classification to predict the variety of the flower.&lt;/p&gt;
+&lt;p&gt;Procedure:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Write the code in Atom and save it as a .py file&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/IrisPredictionML.jpg&#34; alt=&#34;alt text&#34; title=&#34;Python code in Atom&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Launch Anaconda prompt to have Streamlit execute the .py file in a virtual server&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/anaconda-server-iris.jpg&#34; alt=&#34;alt text&#34; title=&#34;Anaconda virtual server&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Change the values of the flower’s characteristics in the left panel to predict in real time the variety of the flower&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/IrisPrediction.gif&#34; alt=&#34;alt text&#34; title=&#34;Web app running on Streamlit&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

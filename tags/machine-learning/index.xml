@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Machine Learning on Julio Zambrano</title>
+    <link>https://jzambrano-xyz.github.io/Portfolio/tags/machine-learning/</link>
+    <description>Recent content in Machine Learning on Julio Zambrano</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Julio Zambrano {year}</copyright>
+    <lastBuildDate>Sun, 30 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://jzambrano-xyz.github.io/Portfolio/tags/machine-learning/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Boston Housing Prediction</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/project/bostonhousingprediction/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/project/bostonhousingprediction/</guid>
+      <description>&lt;p&gt;What will be the circumference of an &lt;em&gt;Orange tree&lt;/em&gt; after 800 days of being planted?&lt;/p&gt;
+&lt;p&gt;In a linear regression problem, we use the formula for a straight line:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y=m*x+b&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Where &lt;strong&gt;Y&lt;/strong&gt; is the question to solve&lt;/p&gt;
+&lt;p&gt;In R we use the lm() funcion to find the best adjustments for that formula given some basic info&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;lm(circumference ~ age, data = Orange)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;According to lm, the best parameters are:
+Intercept = 17.3997, age = 0.1068&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;circumference &amp;lt;- 0.1068 * age + 17.3997&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/OrangeTrees.png&#34; alt=&#34;alt text&#34; title=&#34;Regression graphic in R&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The result is 102.8397 mm for the value of the circumference of an Orange tree after 800 days of it being planted.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Car Speed Prediction</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/project/carspeedprediction/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/project/carspeedprediction/</guid>
+      <description>&lt;p&gt;What will be the circumference of an &lt;em&gt;Orange tree&lt;/em&gt; after 800 days of being planted?&lt;/p&gt;
+&lt;p&gt;In a linear regression problem, we use the formula for a straight line:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y=m*x+b&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Where &lt;strong&gt;Y&lt;/strong&gt; is the question to solve&lt;/p&gt;
+&lt;p&gt;In R we use the lm() funcion to find the best adjustments for that formula given some basic info&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;lm(circumference ~ age, data = Orange)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;According to lm, the best parameters are:
+Intercept = 17.3997, age = 0.1068&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;circumference &amp;lt;- 0.1068 * age + 17.3997&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/OrangeTrees.png&#34; alt=&#34;alt text&#34; title=&#34;Regression graphic in R&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The result is 102.8397 mm for the value of the circumference of an Orange tree after 800 days of it being planted.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Clustering example - Rocks</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/project/rocksclustering/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/project/rocksclustering/</guid>
+      <description>&lt;p&gt;What will be the circumference of an &lt;em&gt;Orange tree&lt;/em&gt; after 800 days of being planted?&lt;/p&gt;
+&lt;p&gt;In a linear regression problem, we use the formula for a straight line:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y=m*x+b&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Where &lt;strong&gt;Y&lt;/strong&gt; is the question to solve&lt;/p&gt;
+&lt;p&gt;In R we use the lm() funcion to find the best adjustments for that formula given some basic info&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;lm(circumference ~ age, data = Orange)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;According to lm, the best parameters are:
+Intercept = 17.3997, age = 0.1068&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;circumference &amp;lt;- 0.1068 * age + 17.3997&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/OrangeTrees.png&#34; alt=&#34;alt text&#34; title=&#34;Regression graphic in R&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The result is 102.8397 mm for the value of the circumference of an Orange tree after 800 days of it being planted.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Decision trees - Titanic Survivors</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/project/titanicsurvivors/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/project/titanicsurvivors/</guid>
+      <description>&lt;p&gt;What will be the circumference of an &lt;em&gt;Orange tree&lt;/em&gt; after 800 days of being planted?&lt;/p&gt;
+&lt;p&gt;In a linear regression problem, we use the formula for a straight line:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y=m*x+b&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Where &lt;strong&gt;Y&lt;/strong&gt; is the question to solve&lt;/p&gt;
+&lt;p&gt;In R we use the lm() funcion to find the best adjustments for that formula given some basic info&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;lm(circumference ~ age, data = Orange)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;According to lm, the best parameters are:
+Intercept = 17.3997, age = 0.1068&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;circumference &amp;lt;- 0.1068 * age + 17.3997&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/OrangeTrees.png&#34; alt=&#34;alt text&#34; title=&#34;Regression graphic in R&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The result is 102.8397 mm for the value of the circumference of an Orange tree after 800 days of it being planted.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Orange Trees Growth</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/project/orangetreesgrowth/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/project/orangetreesgrowth/</guid>
+      <description>&lt;p&gt;What will be the circumference of an &lt;em&gt;Orange tree&lt;/em&gt; after 800 days of being planted?&lt;/p&gt;
+&lt;p&gt;In a linear regression problem, we use the formula for a straight line:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y=m*x+b&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Where &lt;strong&gt;Y&lt;/strong&gt; is the question to solve&lt;/p&gt;
+&lt;p&gt;In R we use the lm() funcion to find the best adjustments for that formula given some basic info&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;lm(circumference ~ age, data = Orange)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;According to lm, the best parameters are:
+Intercept = 17.3997, age = 0.1068&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;circumference &amp;lt;- 0.1068 * age + 17.3997&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/OrangeTrees.png&#34; alt=&#34;alt text&#34; title=&#34;Regression graphic in R&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The result is 102.8397 mm for the value of the circumference of an Orange tree after 800 days of it being planted.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Science Web App - Palmer Penguins prediction</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/project/palmerpenguins/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/project/palmerpenguins/</guid>
+      <description>&lt;p&gt;The purpose of this ML Web App is to make a dynamic prediction of the species of a penguin based on its characteristics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Island&lt;/li&gt;
+&lt;li&gt;Bill length&lt;/li&gt;
+&lt;li&gt;Bill depth&lt;/li&gt;
+&lt;li&gt;Flipper length&lt;/li&gt;
+&lt;li&gt;Body mass&lt;/li&gt;
+&lt;li&gt;Sex&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;In order to improve its performance, this project has two python files: one to create the model that will make the prediction of the species and another to execute the web app and get the user’s input to make the prediction with a call to the model.&lt;/p&gt;
+&lt;p&gt;The model can be updated to predict the species, sex or island of the penguin, just requiring to change the values of the corresponding column in the dataset that has the info to be predicted and its target information within the code.&lt;/p&gt;
+&lt;p&gt;In order to execute this project, it is necessary to have &lt;code&gt;pandas&lt;/code&gt;, &lt;code&gt;sklearn&lt;/code&gt;, &lt;code&gt;streamlit&lt;/code&gt;, &lt;code&gt;pickle&lt;/code&gt; and &lt;code&gt;numpy&lt;/code&gt; installed with &lt;strong&gt;python&lt;/strong&gt;, all of these to be run into an &lt;strong&gt;Anaconda&lt;/strong&gt; environment.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Procedure:&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Write the code for the classification model in Atom and save it as a .py file (&lt;code&gt;model_building_penguins.py&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Launch Anaconda prompt to have python execute the .py file and return a pickle file with the ready-to-use model in the same folder (&lt;code&gt;penguins_clf.pkl&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Write the code for the web app in Atom and save it as a .py file (&lt;code&gt;model_building_penguins.py&lt;/code&gt;)&lt;/li&gt;
+&lt;li&gt;Execute the web app with Streamlit using Anaconda&lt;/li&gt;
+&lt;li&gt;Upload a .csv file with the the characteristics of a penguin, or change the values of its characteristics in the left panel to predict in real time its species&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/PenguinsModelBuilding.jpg&#34; alt=&#34;alt text&#34; title=&#34;Code for the model&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/PenguinsPickle.jpg&#34; alt=&#34;alt text&#34; title=&#34;Creation of the pickle model&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/WebAppPenguins.jpg&#34; alt=&#34;alt text&#34; title=&#34;Code for the Web app&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/StreamlitPenguins.jpg&#34; alt=&#34;alt text&#34; title=&#34;Execution of the Web app using Streamlit&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/PalmerPenguins.gif&#34; alt=&#34;alt text&#34; title=&#34;Web app running on Streamlit&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Data Science Web App - Iris flower prediction</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/project/iris-flower-ml/</link>
+      <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/project/iris-flower-ml/</guid>
+      <description>&lt;p&gt;The purpose of this ML Web App is to make a dynamic prediction of the type of a flower based on its characteristics:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Sepal length&lt;/li&gt;
+&lt;li&gt;Sepal width&lt;/li&gt;
+&lt;li&gt;Petal length&lt;/li&gt;
+&lt;li&gt;Petal width&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;This project requires to have &lt;code&gt;sklearn&lt;/code&gt; and &lt;code&gt;pandas&lt;/code&gt; installed with Python, in order to import the dataset that contains the information of the flowers and to execute a random forest classification to predict the variety of the flower.&lt;/p&gt;
+&lt;p&gt;Procedure:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Write the code in Atom and save it as a .py file&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/IrisPredictionML.jpg&#34; alt=&#34;alt text&#34; title=&#34;Python code in Atom&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Launch Anaconda prompt to have Streamlit execute the .py file in a virtual server&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/anaconda-server-iris.jpg&#34; alt=&#34;alt text&#34; title=&#34;Anaconda virtual server&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Change the values of the flower’s characteristics in the left panel to predict in real time the variety of the flower&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/IrisPrediction.gif&#34; alt=&#34;alt text&#34; title=&#34;Web app running on Streamlit&#34;&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>

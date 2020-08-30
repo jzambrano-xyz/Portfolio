@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Julio Zambrano</title>
+    <link>https://jzambrano-xyz.github.io/Portfolio/tags/</link>
+    <description>Recent content in Tags on Julio Zambrano</description>
+    <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; Julio Zambrano {year}</copyright>
+    <lastBuildDate>Sun, 30 Aug 2020 00:00:00 +0000</lastBuildDate>
+    
+	    <atom:link href="https://jzambrano-xyz.github.io/Portfolio/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Data Science</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/tags/data-science/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/tags/data-science/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Machine Learning</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/tags/machine-learning/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/tags/machine-learning/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>R</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/tags/r/</link>
+      <pubDate>Sun, 30 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/tags/r/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/tags/python/</link>
+      <pubDate>Mon, 24 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/tags/python/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Economics</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/tags/economics/</link>
+      <pubDate>Sat, 22 Aug 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/tags/economics/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Source Themes</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/tags/source-themes/</link>
+      <pubDate>Sun, 07 Apr 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/tags/source-themes/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>academia</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/tags/academia/</link>
+      <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/tags/academia/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
