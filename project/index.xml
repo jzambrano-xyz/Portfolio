@@ -7,10 +7,130 @@
     <generator>Source Themes academia (https://sourcethemes.com/academic/)</generator>
     <language>en-us</language>
     <copyright>&amp;copy; Julio Zambrano {year}</copyright>
-    <lastBuildDate>Sun, 30 Aug 2020 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Fri, 04 Sep 2020 00:00:00 +0000</lastBuildDate>
     
 	    <atom:link href="https://jzambrano-xyz.github.io/Portfolio/project/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>K-Means - Clustering the Iris dataset</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/project/k-means-clustering-_the_iris_dataset/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/project/k-means-clustering-_the_iris_dataset/</guid>
+      <description>&lt;p&gt;What will be the circumference of an &lt;em&gt;Orange tree&lt;/em&gt; after 800 days of being planted?&lt;/p&gt;
+&lt;p&gt;In a linear regression problem, we use the formula for a straight line:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y=m*x+b&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Where &lt;strong&gt;Y&lt;/strong&gt; is the question to solve&lt;/p&gt;
+&lt;p&gt;In R we use the lm() funcion to find the best adjustments for that formula given some basic info&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;lm(circumference ~ age, data = Orange)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;According to lm, the best parameters are:
+Intercept = 17.3997, age = 0.1068&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;circumference &amp;lt;- 0.1068 * age + 17.3997&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/OrangeTrees.png&#34; alt=&#34;alt text&#34; title=&#34;Regression graphic in R&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The result is 102.8397 mm for the value of the circumference of an Orange tree after 800 days of it being planted.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>KNN-CaravanPurchase</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/project/knn-caravanpurchase/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/project/knn-caravanpurchase/</guid>
+      <description>&lt;p&gt;What will be the circumference of an &lt;em&gt;Orange tree&lt;/em&gt; after 800 days of being planted?&lt;/p&gt;
+&lt;p&gt;In a linear regression problem, we use the formula for a straight line:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y=m*x+b&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Where &lt;strong&gt;Y&lt;/strong&gt; is the question to solve&lt;/p&gt;
+&lt;p&gt;In R we use the lm() funcion to find the best adjustments for that formula given some basic info&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;lm(circumference ~ age, data = Orange)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;According to lm, the best parameters are:
+Intercept = 17.3997, age = 0.1068&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;circumference &amp;lt;- 0.1068 * age + 17.3997&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/OrangeTrees.png&#34; alt=&#34;alt text&#34; title=&#34;Regression graphic in R&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The result is 102.8397 mm for the value of the circumference of an Orange tree after 800 days of it being planted.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Linear Regression - Student Grades</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/project/linearregression-studentgrades/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/project/linearregression-studentgrades/</guid>
+      <description>&lt;p&gt;What will be the circumference of an &lt;em&gt;Orange tree&lt;/em&gt; after 800 days of being planted?&lt;/p&gt;
+&lt;p&gt;In a linear regression problem, we use the formula for a straight line:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y=m*x+b&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Where &lt;strong&gt;Y&lt;/strong&gt; is the question to solve&lt;/p&gt;
+&lt;p&gt;In R we use the lm() funcion to find the best adjustments for that formula given some basic info&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;lm(circumference ~ age, data = Orange)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;According to lm, the best parameters are:
+Intercept = 17.3997, age = 0.1068&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;circumference &amp;lt;- 0.1068 * age + 17.3997&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/OrangeTrees.png&#34; alt=&#34;alt text&#34; title=&#34;Regression graphic in R&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The result is 102.8397 mm for the value of the circumference of an Orange tree after 800 days of it being planted.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modelling - Applying SVM on the Iris dataset</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/project/modelling-supportvectormachines-svm-iris/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/project/modelling-supportvectormachines-svm-iris/</guid>
+      <description>&lt;p&gt;What will be the circumference of an &lt;em&gt;Orange tree&lt;/em&gt; after 800 days of being planted?&lt;/p&gt;
+&lt;p&gt;In a linear regression problem, we use the formula for a straight line:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y=m*x+b&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Where &lt;strong&gt;Y&lt;/strong&gt; is the question to solve&lt;/p&gt;
+&lt;p&gt;In R we use the lm() funcion to find the best adjustments for that formula given some basic info&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;lm(circumference ~ age, data = Orange)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;According to lm, the best parameters are:
+Intercept = 17.3997, age = 0.1068&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;circumference &amp;lt;- 0.1068 * age + 17.3997&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/OrangeTrees.png&#34; alt=&#34;alt text&#34; title=&#34;Regression graphic in R&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The result is 102.8397 mm for the value of the circumference of an Orange tree after 800 days of it being planted.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Modelling - Neural Networks - Boston housing</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/project/modelling-neuralnetworks-boston-housing/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/project/modelling-neuralnetworks-boston-housing/</guid>
+      <description>&lt;p&gt;What will be the circumference of an &lt;em&gt;Orange tree&lt;/em&gt; after 800 days of being planted?&lt;/p&gt;
+&lt;p&gt;In a linear regression problem, we use the formula for a straight line:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y=m*x+b&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Where &lt;strong&gt;Y&lt;/strong&gt; is the question to solve&lt;/p&gt;
+&lt;p&gt;In R we use the lm() funcion to find the best adjustments for that formula given some basic info&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;lm(circumference ~ age, data = Orange)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;According to lm, the best parameters are:
+Intercept = 17.3997, age = 0.1068&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;circumference &amp;lt;- 0.1068 * age + 17.3997&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/OrangeTrees.png&#34; alt=&#34;alt text&#34; title=&#34;Regression graphic in R&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The result is 102.8397 mm for the value of the circumference of an Orange tree after 800 days of it being planted.&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Random Forest Titanic Kaggle competition</title>
+      <link>https://jzambrano-xyz.github.io/Portfolio/project/randomforesttitanickaggle/</link>
+      <pubDate>Fri, 04 Sep 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://jzambrano-xyz.github.io/Portfolio/project/randomforesttitanickaggle/</guid>
+      <description>&lt;p&gt;What will be the circumference of an &lt;em&gt;Orange tree&lt;/em&gt; after 800 days of being planted?&lt;/p&gt;
+&lt;p&gt;In a linear regression problem, we use the formula for a straight line:&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Y=m*x+b&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Where &lt;strong&gt;Y&lt;/strong&gt; is the question to solve&lt;/p&gt;
+&lt;p&gt;In R we use the lm() funcion to find the best adjustments for that formula given some basic info&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;lm(circumference ~ age, data = Orange)&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;According to lm, the best parameters are:
+Intercept = 17.3997, age = 0.1068&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;circumference &amp;lt;- 0.1068 * age + 17.3997&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://jzambrano-xyz.github.io/Portfolio/img/OrangeTrees.png&#34; alt=&#34;alt text&#34; title=&#34;Regression graphic in R&#34;&gt;&lt;/p&gt;
+&lt;p&gt;The result is 102.8397 mm for the value of the circumference of an Orange tree after 800 days of it being planted.&lt;/p&gt;
+</description>
+    </item>
     
     <item>
       <title>Boston Housing Prediction</title>
