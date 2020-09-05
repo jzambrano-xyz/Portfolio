@@ -3,6 +3,66 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://jzambrano-xyz.github.io/Portfolio/tags/data-science/</loc>
+    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jzambrano-xyz.github.io/Portfolio/</loc>
+    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jzambrano-xyz.github.io/Portfolio/project/k-means-clustering-_the_iris_dataset/</loc>
+    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jzambrano-xyz.github.io/Portfolio/project/knn-caravanpurchase/</loc>
+    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jzambrano-xyz.github.io/Portfolio/project/linearregression-studentgrades/</loc>
+    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jzambrano-xyz.github.io/Portfolio/tags/machine-learning/</loc>
+    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jzambrano-xyz.github.io/Portfolio/project/modelling-supportvectormachines-svm-iris/</loc>
+    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jzambrano-xyz.github.io/Portfolio/project/modelling-neuralnetworks-boston-housing/</loc>
+    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jzambrano-xyz.github.io/Portfolio/project/</loc>
+    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jzambrano-xyz.github.io/Portfolio/tags/r/</loc>
+    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jzambrano-xyz.github.io/Portfolio/project/randomforesttitanickaggle/</loc>
+    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://jzambrano-xyz.github.io/Portfolio/tags/</loc>
+    <lastmod>2020-09-04T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://jzambrano-xyz.github.io/Portfolio/project/bostonhousingprediction/</loc>
     <lastmod>2020-08-30T00:00:00+00:00</lastmod>
   </url>
@@ -18,42 +78,12 @@
   </url>
   
   <url>
-    <loc>https://jzambrano-xyz.github.io/Portfolio/tags/data-science/</loc>
-    <lastmod>2020-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jzambrano-xyz.github.io/Portfolio/project/titanicsurvivors/</loc>
     <lastmod>2020-08-30T00:00:00+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://jzambrano-xyz.github.io/Portfolio/</loc>
-    <lastmod>2020-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jzambrano-xyz.github.io/Portfolio/tags/machine-learning/</loc>
-    <lastmod>2020-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://jzambrano-xyz.github.io/Portfolio/project/orangetreesgrowth/</loc>
-    <lastmod>2020-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jzambrano-xyz.github.io/Portfolio/project/</loc>
-    <lastmod>2020-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jzambrano-xyz.github.io/Portfolio/tags/r/</loc>
-    <lastmod>2020-08-30T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://jzambrano-xyz.github.io/Portfolio/tags/</loc>
     <lastmod>2020-08-30T00:00:00+00:00</lastmod>
   </url>
   
