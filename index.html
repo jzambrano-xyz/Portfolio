@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>julio@zambrano: ~/portfolio</title>
+<meta name="description" content="Julio Zambrano — AI/ML Engineer specializing in generative AI, synthetic data, and multi-cloud architecture. 15+ years across Mexico, Canada, Italy, Austria, and Germany.">
+
+<meta property="og:title" content="Julio Zambrano — AI/ML Engineer">
+<meta property="og:description" content="Machine learning, generative AI, and multi-cloud systems, built for production.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://jzambrano.xyz/">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='10' fill='%230B0F14'/%3E%3Ctext x='32' y='42' font-family='monospace' font-size='26' fill='%23E8A33D' text-anchor='middle'%3E%3E_%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --bg: #0B0F14;
+    --panel: #121821;
+    --panel-2: #171F2A;
+    --line: #232C38;
+    --text: #DCE2E8;
+    --text-dim: #8A94A6;
+    --text-faint: #576273;
+    --amber: #E8A33D;
+    --amber-soft: rgba(232,163,61,0.12);
+    --teal: #5FB8AE;
+    --font: 'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    --maxw: 900px;
+  }
+
+  *{ box-sizing:border-box; }
+  html{ scroll-behavior:smooth; }
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior:auto; }
+    *{ animation-duration:0.001ms !important; animation-iteration-count:1 !important; transition-duration:0.001ms !important; }
+  }
+
+  body{
+    margin:0;
+    background:var(--bg);
+    color:var(--text);
+    font-family:var(--font);
+    font-size:15.5px;
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{ color:inherit; text-decoration:none; }
+  a:focus-visible, button:focus-visible{ outline:2px solid var(--amber); outline-offset:2px; }
+
+  .wrap{ max-width:var(--maxw); margin:0 auto; padding:0 clamp(18px, 5vw, 32px); }
+
+  .skip-link{
+    position:absolute; left:-999px; top:0;
+    background:var(--amber); color:#0B0F14; padding:8px 14px; z-index:200; font-weight:700;
+  }
+  .skip-link:focus{ left:12px; top:12px; }
+
+  /* Title bar / nav */
+  header.bar{
+    position:sticky; top:0; z-index:100;
+    background:rgba(11,15,20,0.92);
+    backdrop-filter:blur(6px);
+    border-bottom:1px solid var(--line);
+  }
+  .bar-row{
+    display:flex; align-items:center; gap:18px;
+    padding:14px clamp(18px, 5vw, 32px);
+    max-width:var(--maxw); margin:0 auto;
+  }
+  .dots{ display:flex; gap:6px; flex-shrink:0; }
+  .dots span{ width:10px; height:10px; border-radius:50%; background:var(--line); }
+  .dots span:nth-child(1){ background:#4A3A3A; }
+  .dots span:nth-child(2){ background:#4A3F2A; }
+  .dots span:nth-child(3){ background:#2E453F; }
+  .bar-title{ color:var(--text-dim); font-size:0.85rem; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+  .bar-title strong{ color:var(--text); font-weight:500; }
+
+  nav.links{ margin-left:auto; display:flex; align-items:center; gap:4px; }
+  nav.links a{
+    color:var(--text-dim); font-size:0.85rem; padding:6px 10px; border-radius:3px;
+  }
+  nav.links a:hover{ color:var(--amber); background:var(--amber-soft); }
+  nav.links a.res{
+    color:var(--amber); border:1px solid var(--amber); margin-left:6px;
+  }
+  nav.links a.res:hover{ background:var(--amber-soft); }
+
+  .nav-toggle{ display:none; }
+  #nav-check{ display:none; }
+
+  /* Prompt / command line */
+  .prompt{ display:flex; flex-wrap:wrap; gap:0 8px; font-size:0.95rem; color:var(--text-faint); }
+  .prompt .user{ color:var(--teal); }
+  .prompt .sep{ color:var(--text-faint); }
+  .prompt .cmd{ color:var(--amber); font-weight:500; }
+
+  section{ padding:clamp(36px, 6vw, 60px) 0; }
+  section + section{ border-top:1px dashed var(--line); }
+  .output{ margin-top:16px; }
+
+  /* Hero */
+  .hero{ padding-top:clamp(48px, 8vw, 76px); }
+  .hero-grid{ display:grid; grid-template-columns: 1.5fr 1fr; gap:clamp(28px, 5vw, 48px); align-items:start; }
+  .hero h1{
+    font-family:var(--font); font-weight:700; color:var(--text);
+    font-size:clamp(1.5rem, 3vw, 2.05rem); line-height:1.45; margin:0;
+  }
+  .hero .lede{ color:var(--text-dim); margin-top:16px; max-width:56ch; font-size:0.98rem; }
+  .cursor{ display:inline-block; width:9px; height:1.1em; background:var(--amber); vertical-align:text-bottom; margin-left:2px; animation:blink 1s steps(1) infinite; }
+  @keyframes blink{ 50%{ opacity:0; } }
+
+  .cta-row{ display:flex; flex-wrap:wrap; gap:10px; margin-top:28px; }
+  .btn{
+    display:inline-flex; align-items:center; gap:8px; font-family:var(--font);
+    font-size:0.88rem; padding:10px 16px; border-radius:4px; border:1px solid var(--line);
+    cursor:pointer; transition:border-color 0.15s ease, background 0.15s ease, color 0.15s ease;
+    color:var(--text);
+  }
+  .btn:before{ content:'$'; color:var(--text-faint); }
+  .btn-fill{ background:var(--amber); color:#0B0F14; border-color:var(--amber); font-weight:700; }
+  .btn-fill:before{ color:rgba(11,15,20,0.55); }
+  .btn-fill:hover{ background:#F2B457; }
+  .btn-ghost:hover{ border-color:var(--amber); color:var(--amber); }
+
+  /* Photo window */
+  .win{
+    border:1px solid var(--line); border-radius:6px; overflow:hidden; background:var(--panel);
+  }
+  .win-bar{
+    display:flex; align-items:center; gap:8px; padding:8px 12px; border-bottom:1px solid var(--line);
+    background:var(--panel-2);
+  }
+  .win-bar .dots span{ width:8px; height:8px; }
+  .win-bar .name{ color:var(--text-faint); font-size:0.75rem; margin-left:2px; }
+  .photo-frame{ position:relative; width:100%; aspect-ratio:1/1; background:var(--panel-2); }
+  .photo-frame img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .photo-fallback{
+    position:absolute; inset:0; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:10px; color:var(--text-faint); text-align:center; padding:16px;
+  }
+  .photo-fallback svg{ width:32px; height:32px; opacity:0.6; }
+  .photo-fallback span{ font-size:0.72rem; line-height:1.6; }
+
+  .config{ padding:16px; font-size:0.85rem; }
+  .config .k{ color:var(--teal); }
+  .config .p{ color:var(--text-faint); }
+  .config .v{ color:var(--text); }
+  .config .b{ color:var(--text-faint); }
+  .config div{ margin-bottom:4px; }
+
+  /* About */
+  .about-text{ max-width:70ch; color:var(--text-dim); font-size:0.95rem; }
+  .about-text strong{ color:var(--text); font-weight:500; }
+  .tag-line{ margin-top:18px; color:var(--text-faint); font-size:0.85rem; }
+  .tag-line .k{ color:var(--teal); }
+
+  /* Experience */
+  .role{ padding:22px 0; border-top:1px dashed var(--line); }
+  .role:first-child{ border-top:none; padding-top:0; }
+  .role .when{ color:var(--text-faint); font-size:0.8rem; }
+  .role .when::before{ content:'['; }
+  .role .when::after{ content:']'; }
+  .role h3{ font-size:0.98rem; font-weight:700; color:var(--text); margin:6px 0 0; }
+  .role .org{ color:var(--teal); font-size:0.85rem; margin-top:2px; }
+  .role ul{ margin:12px 0 0; padding-left:18px; color:var(--text-dim); font-size:0.9rem; }
+  .role li{ margin-bottom:6px; }
+  .role li::marker{ color:var(--text-faint); }
+  .resume-note{ margin-top:24px; color:var(--text-faint); font-size:0.82rem; }
+  .resume-note::before{ content:'# '; }
+
+  /* Skills code block */
+  .code{ font-size:0.85rem; padding:16px; overflow-x:auto; }
+  .code .k{ color:var(--teal); }
+  .code .s{ color:var(--amber); }
+  .code .p{ color:var(--text-faint); }
+  .code .c{ color:var(--text-faint); font-style:italic; }
+  .code-line{ white-space:pre; }
+
+  /* Publications */
+  .pub{ padding:16px 0; border-top:1px dashed var(--line); font-size:0.88rem; }
+  .pub:first-child{ border-top:none; padding-top:0; }
+  .pub .at{ color:var(--text-faint); }
+  .pub .k{ color:var(--teal); }
+  .pub .cite{ color:var(--text-dim); }
+  .pub .venue{ color:var(--text-faint); margin-top:6px; }
+
+  /* Footer */
+  footer{ padding:clamp(36px,6vw,60px) 0 40px; border-top:1px dashed var(--line); }
+  footer .lede{ color:var(--text-dim); margin-top:14px; max-width:52ch; font-size:0.95rem; }
+  .foot-meta{
+    margin-top:36px; padding-top:20px; border-top:1px dashed var(--line);
+    display:flex; flex-wrap:wrap; gap:10px 20px; justify-content:space-between;
+    color:var(--text-faint); font-size:0.8rem;
+  }
+  .foot-meta a{ color:var(--text-dim); }
+  .foot-meta a:hover{ color:var(--amber); }
+  .final-prompt{ margin-top:18px; color:var(--text-faint); font-size:0.95rem; }
+  .final-prompt .user{ color:var(--teal); }
+
+  @media (max-width: 820px){
+    .hero-grid{ grid-template-columns:1fr; }
+    nav.links{
+      position:fixed; inset:52px 0 auto 0; background:var(--bg);
+      flex-direction:column; align-items:flex-start; gap:0;
+      border-bottom:1px solid var(--line);
+      max-height:0; overflow:hidden; transition:max-height 0.2s ease;
+    }
+    nav.links a{ width:100%; padding:14px clamp(18px,5vw,32px); border-radius:0; border-bottom:1px dashed var(--line); }
+    nav.links a.res{ border:1px solid var(--amber); margin:14px clamp(18px,5vw,32px); width:calc(100% - 2*clamp(18px,5vw,32px)); text-align:center; }
+    #nav-check:checked ~ nav.links{ max-height:400px; }
+    .nav-toggle{
+      display:inline-flex; align-items:center; justify-content:center; margin-left:auto;
+      width:32px; height:32px; border:1px solid var(--line); border-radius:4px; background:transparent; cursor:pointer; flex-shrink:0;
+    }
+    .nav-toggle svg{ width:16px; height:16px; color:var(--text-dim); }
+  }
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="bar">
+  <div class="bar-row">
+    <div class="dots"><span></span><span></span><span></span></div>
+    <a class="bar-title" href="#top"><strong>julio@zambrano</strong>: ~/portfolio</a>
+    <input type="checkbox" id="nav-check">
+    <label class="nav-toggle" for="nav-check" aria-label="Toggle navigation">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </label>
+    <nav class="links">
+      <a href="#about">~/about</a>
+      <a href="#experience">~/experience</a>
+      <a href="#publications">~/publications</a>
+      <a href="#contact">~/contact</a>
+      <a class="res" href="Resume_Julio_Zambrano.pdf" download>résumé</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<div id="top"></div>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="prompt"><span class="user">julio@zambrano</span><span class="sep">:~$</span> <span class="cmd">whoami</span></div>
+      <div class="output">
+        <h1>AI/ML engineering, built for production — not just a pilot.<span class="cursor" aria-hidden="true"></span></h1>
+        <p class="lede">15+ years of engineering experience across Mexico, Canada, Italy, Austria, and Germany, spent turning machine learning, generative AI, and cloud architecture into systems that hold up outside a notebook.</p>
+        <div class="cta-row">
+          <a class="btn btn-fill" href="Resume_Julio_Zambrano.pdf" download>download-resume.sh</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/juliozambrano/" target="_blank" rel="noopener">open linkedin</a>
+          <a class="btn btn-ghost" href="https://cyberdigest.xyz/" target="_blank" rel="noopener">curl cyberdigest.xyz</a>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="win" style="margin-bottom:16px;">
+        <div class="win-bar"><div class="dots"><span></span><span></span><span></span></div><span class="name">julio-zambrano.jpg</span></div>
+        <div class="photo-frame">
+          <img src="julio-zambrano.jpg" alt="Portrait of Julio Zambrano" onerror="this.style.display='none'; document.getElementById('photo-fallback').style.display='flex';">
+          <div id="photo-fallback" class="photo-fallback">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c0-3.6 3.1-6.5 7-6.5s7 2.9 7 6.5"/></svg>
+            <span>add julio-zambrano.jpg<br>to the site folder</span>
+          </div>
+        </div>
+      </div>
+      <div class="win">
+        <div class="win-bar"><div class="dots"><span></span><span></span><span></span></div><span class="name">profile.yaml</span></div>
+        <div class="config">
+          <div><span class="p">location:</span> <span class="v">Baden-Württemberg, Germany</span></div>
+          <div><span class="p">focus:</span> <span class="v">[Machine Learning, Generative AI, Cloud Architecture]</span></div>
+          <div><span class="p">languages:</span> <span class="v">[ES, EN, PT, IT, DE]</span></div>
+          <div><span class="p">status:</span> <span class="k">open_to_ai_ml_roles</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about">
+  <div class="wrap">
+    <div class="prompt"><span class="user">julio@zambrano</span><span class="sep">:~$</span> <span class="cmd">cat about.md</span></div>
+    <div class="output">
+      <p class="about-text">Julio started as a <strong>mechatronics engineer</strong> and moved into machine learning through hands-on production work: deploying <strong>generative AI and synthetic data</strong> systems for enterprise customers, running <strong>multi-cloud infrastructure</strong> on AWS, Azure, and GCP, and building models in TensorFlow and H2O for real client problems, from predictive maintenance on robotic arms to production ML pipelines. He's published applied research in NLP and predictive maintenance, and has worked across five countries in roles that combined deep technical build-out with enterprise-scale deployment. He's now looking for a hands-on <strong>AI/ML engineering role</strong> — building and scaling systems, not just advising on them.</p>
+      <div class="tag-line"><span class="k">tags:</span> Machine Learning, Generative AI, Synthetic Data, Multi-Cloud Architecture, Kubernetes &amp; OpenShift, Applied NLP</div>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="wrap">
+    <div class="prompt"><span class="user">julio@zambrano</span><span class="sep">:~$</span> <span class="cmd">cat experience.log</span></div>
+    <div class="output">
+
+      <div class="role">
+        <div class="when">2025-11 — present</div>
+        <h3>Technical Customer Success Manager</h3>
+        <div class="org">Camunda</div>
+        <ul>
+          <li>Architect agentic orchestration solutions for enterprise clients, from use-case validation through implementation and ongoing optimization.</li>
+          <li>Design deployment architecture across SaaS, cloud, hybrid, and self-managed environments, including air-gapped infrastructure for regulated industries.</li>
+          <li>Lead technical architecture reviews and onboarding to drive platform adoption for enterprise accounts.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="when">2022-03 — 2025-10</div>
+        <h3>Customer Experience Engineer</h3>
+        <div class="org">MOSTLY AI · remote (Vienna, AT)</div>
+        <ul>
+          <li>Architected multi-cloud infrastructure (AWS, Azure, GCP) for generative AI and synthetic data deployments across customer environments.</li>
+          <li>Standardized deployment pipelines for a generative AI application to support product-led growth.</li>
+          <li>Deployed and troubleshot applications on Kubernetes and OpenShift; built technical enablement materials for engineering and customer teams.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="when">2020-08 — 2022-03</div>
+        <h3>Machine Learning Engineer, Freelance</h3>
+        <div class="org">jzambrano.xyz · remote</div>
+        <ul>
+          <li>Gathered requirements and built logical and physical system specifications for client machine learning projects.</li>
+          <li>Researched, designed, and tested ML/AI models using TensorFlow and H2O for production use cases.</li>
+          <li>Managed multi-cloud infrastructure (Azure, GCP): monitoring, cost and availability reporting, virtualization, containerization.</li>
+        </ul>
+      </div>
+
+      <div class="role">
+        <div class="when">2021-02 — 2021-10</div>
+        <h3>Junior Machine Learning Engineer, Internship</h3>
+        <div class="org">CENIDET · Cuernavaca, MX</div>
+        <ul>
+          <li>Developed a machine learning model for preventive maintenance of palletizing robotic arms (cobots).</li>
+          <li>Built data and process models to optimize architecture and evaluate design performance and reliability.</li>
+        </ul>
+      </div>
+
+      <p class="resume-note">earlier international management experience (sales, operations) is on the full résumé</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="prompt"><span class="user">julio@zambrano</span><span class="sep">:~$</span> <span class="cmd">cat skills.json</span></div>
+    <div class="output">
+      <div class="win">
+        <div class="win-bar"><div class="dots"><span></span><span></span><span></span></div><span class="name">skills.json</span></div>
+        <div class="code">
+<div class="code-line"><span class="p">{</span></div>
+<div class="code-line">  <span class="k">"ml_ai"</span><span class="p">:</span> [<span class="s">"TensorFlow"</span>, <span class="s">"H2O"</span>, <span class="s">"generative AI"</span>, <span class="s">"synthetic data"</span>, <span class="s">"agentic orchestration"</span>]<span class="p">,</span></div>
+<div class="code-line">  <span class="k">"cloud_infra"</span><span class="p">:</span> [<span class="s">"AWS"</span>, <span class="s">"Azure"</span>, <span class="s">"Google Cloud"</span>, <span class="s">"Kubernetes"</span>, <span class="s">"OpenShift"</span>]<span class="p">,</span></div>
+<div class="code-line">  <span class="k">"certifications"</span><span class="p">:</span> [</div>
+<div class="code-line">    <span class="s">"AWS Cloud Quest: Data Analytics, ML, Solutions Architect"</span><span class="p">,</span></div>
+<div class="code-line">    <span class="s">"Google Cloud: Core Infrastructure, DevOps"</span><span class="p">,</span></div>
+<div class="code-line">    <span class="s">"Kubernetes Fundamentals — Linux Foundation"</span></div>
+<div class="code-line">  ]<span class="p">,</span></div>
+<div class="code-line">  <span class="k">"languages"</span><span class="p">:</span> <span class="c">// native, C1, C1, B2, B1</span></div>
+<div class="code-line">    [<span class="s">"Spanish"</span>, <span class="s">"English"</span>, <span class="s">"Portuguese"</span>, <span class="s">"Italian"</span>, <span class="s">"German"</span>]</div>
+<div class="code-line"><span class="p">}</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="publications">
+  <div class="wrap">
+    <div class="prompt"><span class="user">julio@zambrano</span><span class="sep">:~$</span> <span class="cmd">cat publications.bib</span></div>
+    <div class="output">
+      <div class="pub">
+        <div class="cite"><span class="at">@inproceedings</span> — Cuéllar-Hidalgo, Guerrero-Zambrano, et al. Multilingual gender-biased and communal language identification without linguistic features, for the LUC team's ComMA-2021 shared task submission.</div>
+        <div class="venue"># 18th International Conference on Natural Language Processing · Dec 2021 · Silchar, India</div>
+      </div>
+      <div class="pub">
+        <div class="cite"><span class="at">@inproceedings</span> — Guerrero-Zambrano, Reyes-Salgado. A comparison of machine learning algorithms for the preventive diagnosis of palletizing robotic arms.</div>
+        <div class="venue"># CINIAI 2021 — Congreso Internacional de Inteligencia Artificial e Industria 4.0 · Nov 2021 · Jalisco, Mexico</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer id="contact">
+  <div class="wrap">
+    <div class="prompt"><span class="user">julio@zambrano</span><span class="sep">:~$</span> <span class="cmd">./contact.sh</span></div>
+    <p class="lede">Open to hands-on AI/ML engineering roles. The fastest way to reach me is LinkedIn — the résumé has everything else.</p>
+    <div class="cta-row">
+      <a class="btn btn-fill" href="Resume_Julio_Zambrano.pdf" download>download-resume.sh</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/juliozambrano/" target="_blank" rel="noopener">open linkedin</a>
+      <a class="btn btn-ghost" href="https://cyberdigest.xyz/" target="_blank" rel="noopener">curl cyberdigest.xyz</a>
+    </div>
+    <div class="final-prompt"><span class="user">julio@zambrano</span><span class="sep">:~$</span> <span class="cursor" aria-hidden="true"></span></div>
+    <div class="foot-meta">
+      <span># © <span id="year"></span> Julio Zambrano</span>
+      <a href="mailto:julio@jzambrano.xyz">julio@jzambrano.xyz</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.querySelectorAll('nav.links a').forEach(function(a){
+    a.addEventListener('click', function(){
+      var check = document.getElementById('nav-check');
+      if(check) check.checked = false;
+    });
+  });
+</script>
+</body>
+</html>
